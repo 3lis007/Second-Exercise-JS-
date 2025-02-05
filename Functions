@@ -1,0 +1,38 @@
+//Write a function add(a, b) that returns the sum of two numbers.
+function add(a, b) {
+  return a + b;
+}
+
+let addResult = add(3, 4);
+console.log(addResult);
+
+//Write a function isPrime(n) that returns true if n is a prime number and false otherwise.
+function isPrime(n) {
+  if (n <= 1) return false;
+
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isPrime(1));
+
+//Create a function findLongestWord(words) that takes an array of words and returns the longest word.
+const words = ["nike", "addidas", "burberry", "balenciaga"];
+
+function findLongestWord(words) {
+  let longest = "";
+
+  for (let word of words) {
+    if (word.length > longest.length) {
+      longest = word;
+    }
+  }
+
+  return longest;
+}
+
+console.log(findLongestWord(words));
